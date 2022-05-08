@@ -1,0 +1,20 @@
+.button {
+    border: none;
+    background-color: #353535;
+    padding: 12px 26px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.button:hover {
+    background-color: #404040;
+}

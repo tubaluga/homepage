@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 136px;
+}
+
+.header {
+    font-family: "Eczar";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 85px;
+    margin-bottom: 57px;
+}
+
+@media screen and (max-width: 786px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .header {
+        margin-top: 57px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        line-height: 75px;
+    }
+
+    .container {
+        margin-bottom: 100px;
+    }
+}

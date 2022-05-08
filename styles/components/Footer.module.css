@@ -1,0 +1,19 @@
+.container {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.social_logo_row {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_logo_row__item {
+    cursor: pointer;
+}

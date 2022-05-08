@@ -1,0 +1,106 @@
+.header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 125%;
+    font-family: "Eczar";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__item {
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.card {
+    background-color: #353535;
+    border: none;
+    border-radius: 24px;
+    height: 512px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 76px 0 76px;
+}
+
+.card__block {
+    margin-right: 76px;
+}
+
+.card__header {
+    font-family: "Work Sans";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 4px 0;
+}
+
+.card__description {
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 476px;
+    margin: 4px 0;
+}
+
+.appstore_wrapper {
+    margin-top: 32px;
+}
+
+.gplay_logo {
+    width: 240px;
+    margin-left: -15px;
+}
+
+@media screen and (max-width: 786px) {
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        height: auto;
+    }
+
+    .card__row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin: 0 32px 0 32px;
+    }
+    .card__block {
+        margin-right: 0;
+    }
+
+    .card__description {
+        max-width: auto;
+        display: block;
+    }
+
+    .card__image {
+        margin-bottom: 24px;
+        margin: -32px -32px 24px -32px;
+    }
+
+    .gplay_logo {
+        margin-left: 0;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
