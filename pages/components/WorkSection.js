@@ -3,6 +3,8 @@ import style from "../../styles/components/WorkSection.module.css";
 import project_logo from "../../public/project-template.png";
 import n_puzle_logo from "../../public/n-puzle.png";
 import ps_logo from "../../public/ps-logo.png";
+import bouy_logo from "../../public/bouy-screen.png";
+import brutto_logo from "../../public/brutto-logo.png";
 
 function Card(props) {
     return (
@@ -19,7 +21,8 @@ function Card(props) {
                                 <img
                                     className={style.gplay_logo}
                                     alt="Get it on Google Play"
-                                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    src="/google-play-badge.png"
+                                    /*                                            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"*/
                                 />
                             </a>
                         </div>
@@ -35,13 +38,8 @@ function Card(props) {
 
 const project_data_model = [
     {
-        name: "Brutto",
-        description: "Qt-based application for weighing station automation.",
-        image: project_logo,
-    },
-    {
         name: "Fairy Tales",
-        description: "A simple book library at your fingertips.",
+        description: "A simple library of books at your fingertips.",
         image: project_logo,
     },
     {
@@ -60,9 +58,16 @@ const project_data_model = [
             "https://play.google.com/store/apps/details?id=com.bzart.proximitysensor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
     },
     {
-        name: "English Alphabet",
-        description: "",
-        image: ps_logo,
+        name: "Brutto",
+        description: "Qt-based application for weighing station automation.",
+        image: brutto_logo,
+    },
+
+    {
+        name: "Bouy",
+        description:
+            "Desktop application for processing measurements of seas and oceans.",
+        image: bouy_logo,
     },
 ];
 

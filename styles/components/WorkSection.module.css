@@ -31,7 +31,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    margin: 0 76px 0 76px;
+    margin: 0 47px 0 76px;
 }
 
 .card__block {
@@ -65,6 +65,10 @@
     margin-left: -15px;
 }
 
+.card__image {
+    max-width: 65%;
+}
+
 @media screen and (max-width: 786px) {
     .card {
         height: auto;
@@ -95,6 +99,7 @@
     .card__image {
         margin-bottom: 24px;
         margin: -32px -32px 24px -32px;
+        max-width: none;
     }
 
     .gplay_logo {
