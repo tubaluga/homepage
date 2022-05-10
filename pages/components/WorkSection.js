@@ -77,9 +77,9 @@ export default () => {
             <div className={style.container__item}>
                 <div className={style.header}>My Recent Works</div>
             </div>
-            {project_data_model.map((project) => {
+            {project_data_model.map((project, index) => {
                 return (
-                    <div className={style.container__item}>
+                    <div key={`job-$index`} className={style.container__item}>
                         <Card project={project} />
                     </div>
                 );

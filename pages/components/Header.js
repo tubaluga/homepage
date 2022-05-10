@@ -18,9 +18,13 @@ const header_menu_items = [
 export default () => {
     return (
         <div className={styles.header}>
-            {header_menu_items.map((item) => {
+            {header_menu_items.map((item, index) => {
                 return (
-                    <a className={styles.header__item} href={item.link}>
+                    <a
+                        key={`menu-$index`}
+                        className={styles.header__item}
+                        href={item.link}
+                    >
                         {item.name}
                     </a>
                 );
