@@ -18,9 +18,13 @@ export default (props) => {
                 <Button href="mailto:tubaluga@gmail.com">Contact Me</Button>
             </div>
             <div className={style.social_logo_row}>
-                {social_media_model.map((element) => {
+                {social_media_model.map((element, index) => {
                     return (
-                        <a target="_blank" href={element.link}>
+                        <a
+                            key={`social-$index`}
+                            target="_blank"
+                            href={element.link}
+                        >
                             <Image
                                 src={element.image}
                                 layout="fixed"

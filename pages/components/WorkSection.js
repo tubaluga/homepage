@@ -1,10 +1,10 @@
 import Image from "next/image";
 import style from "../../styles/components/WorkSection.module.css";
 import project_logo from "../../public/project-template.png";
-import n_puzle_logo from "../../public/n-puzle.png";
-import ps_logo from "../../public/ps-logo.png";
-import bouy_logo from "../../public/bouy-screen.png";
-import brutto_logo from "../../public/brutto-logo.png";
+import n_puzle_logo from "../../public/n-puzle.jpg";
+import ps_logo from "../../public/ps-logo.jpg";
+import bouy_logo from "../../public/bouy-screen.jpg";
+import brutto_logo from "../../public/brutto-logo.jpg";
 
 function Card(props) {
     return (
@@ -29,7 +29,11 @@ function Card(props) {
                     ) : null}
                 </div>
                 <div className={style.card__image}>
-                    <Image src={props.project.image} alt="project logo" />
+                    <Image
+                        src={props.project.image}
+                        alt="project logo"
+                        placeholder={"blur"}
+                    />
                 </div>
             </div>
         </div>
