@@ -28,11 +28,12 @@ function Card(props) {
                         </div>
                     ) : null}
                 </div>
+
                 <div className={style.card__image}>
-                    <Image
-                        src={props.project.image}
+                    <img
+                        className={style.card__project_image}
+                        src={props.project.image.src}
                         alt="project logo"
-                        placeholder={"blur"}
                     />
                 </div>
             </div>
