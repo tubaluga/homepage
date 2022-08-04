@@ -1,10 +1,9 @@
-import Image from "next/image";
 import style from "../../styles/components/WorkSection.module.css";
-import project_logo from "../../public/project-template.png";
 import n_puzle_logo from "../../public/n-puzle.jpg";
 import ps_logo from "../../public/ps-logo.jpg";
 import bouy_logo from "../../public/bouy-screen.jpg";
 import brutto_logo from "../../public/brutto-logo.jpg";
+import fary_tales_logo from "../../public/fary_tales.jpg";
 
 function Card(props) {
     return (
@@ -45,7 +44,7 @@ const project_data_model = [
     {
         name: "Fairy Tales",
         description: "A simple library of books at your fingertips.",
-        image: project_logo,
+        image: fary_tales_logo,
     },
     {
         name: "15 Puzzle game",
