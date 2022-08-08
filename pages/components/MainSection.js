@@ -3,7 +3,7 @@ import logo from "../../public/developer-logo.png";
 import style from "../../styles/components/MainSection.module.css";
 import Button from "./Button";
 
-export default (props) => {
+export default function MainSection(props) {
     return (
         <div id={props.id} className={style.container}>
             <div className={style.block}>
@@ -15,4 +15,4 @@ export default (props) => {
             <Image src={logo} alt="logo" />
         </div>
     );
-};
+}

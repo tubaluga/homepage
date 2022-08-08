@@ -11,7 +11,7 @@ const social_media_model = [
     },
 ];
 
-export default (props) => {
+export default function Footer(props) {
     return (
         <div id={props.id} className={style.container}>
             <div>
@@ -37,4 +37,4 @@ export default (props) => {
             </div>
         </div>
     );
-};
+}

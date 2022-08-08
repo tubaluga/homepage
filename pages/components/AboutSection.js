@@ -1,6 +1,6 @@
 import style from "../../styles/components/AboutSection.module.css";
 
-export default (props) => {
+export default function AboutSection(props) {
     return (
         <div id={props.id} className={style.container}>
             <div className={style.header}>A Little Bit About Me</div>
@@ -16,4 +16,4 @@ export default (props) => {
             </p>
         </div>
     );
-};
+}

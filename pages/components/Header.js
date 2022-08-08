@@ -15,7 +15,7 @@ const header_menu_items = [
     },
 ];
 
-export default () => {
+export default function Header() {
     return (
         <div className={styles.header}>
             {header_menu_items.map((item, index) => {
@@ -31,4 +31,4 @@ export default () => {
             })}
         </div>
     );
-};
+}

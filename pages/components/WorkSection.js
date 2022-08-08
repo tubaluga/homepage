@@ -75,7 +75,7 @@ const project_data_model = [
     },
 ];
 
-export default () => {
+export default function WorkSection() {
     return (
         <div id="section2" className={style.container}>
             <div className={style.container__item}>
@@ -90,4 +90,4 @@ export default () => {
             })}
         </div>
     );
-};
+}
