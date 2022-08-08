@@ -24,6 +24,7 @@ export default function Footer(props) {
                             key={`social-$index`}
                             target="_blank"
                             href={element.link}
+                            rel="noreferrer"
                         >
                             <Image
                                 src={element.image}
