@@ -4,6 +4,7 @@ import ps_logo from "../../public/ps-logo.jpg";
 import bouy_logo from "../../public/bouy-screen.jpg";
 import brutto_logo from "../../public/brutto-logo.jpg";
 import fary_tales_logo from "../../public/fary_tales.jpg";
+import the_machine_landing_image from "../../public/the-machine-landing.jpg";
 
 function Card(props) {
     return (
@@ -21,8 +22,17 @@ function Card(props) {
                                     className={style.gplay_logo}
                                     alt="Get it on Google Play"
                                     src="/google-play-badge.png"
-                                    /*                                            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"*/
                                 />
+                            </a>
+                        </div>
+                    ) : null}
+                    {!!props.project.link ? (
+                        <div>
+                            <a
+                                className={style.card__link}
+                                href={props.project.link}
+                            >
+                                View project
                             </a>
                         </div>
                     ) : null}
@@ -41,6 +51,13 @@ function Card(props) {
 }
 
 const project_data_model = [
+    {
+        name: "The Machine",
+        description: 'Promo site for the mobile application "The Machine".',
+        image: the_machine_landing_image,
+        link: "http://the-machine.ru",
+    },
+
     {
         name: "Fairy Tales",
         description: "A simple library of books at your fingertips.",

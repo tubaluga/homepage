@@ -59,6 +59,14 @@
     margin: 4px 0;
 }
 
+.card__link {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    padding-top: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .appstore_wrapper {
     margin-top: 32px;
 }
@@ -118,5 +126,9 @@
         margin: 0 auto;
         text-align: center;
         display: block;
+    }
+
+    .card__link {
+        text-align: center;
     }
 }
