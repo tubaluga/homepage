@@ -18,10 +18,16 @@
     .container {
         flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
     }
 
     .header {
         margin-top: 57px;
+        text-align: center;
+    }
+
+    .email_button {
+        text-align: center;
     }
 }
 

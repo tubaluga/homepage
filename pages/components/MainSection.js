@@ -10,7 +10,9 @@ export default function MainSection(props) {
                 <div className={style.header}>
                     Hello! I’m Sergey, A Software Developer.
                 </div>
-                <Button href="mailto:tubaluga@gmail.com">Email Me</Button>
+                <div className={style.email_button}>
+                    <Button href="mailto:tubaluga@gmail.com">Email Me</Button>
+                </div>
             </div>
             <Image src={logo} alt="logo" />
         </div>
