@@ -14,7 +14,7 @@
     margin-bottom: 57px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
     .container {
         flex-direction: column-reverse;
         justify-content: center;

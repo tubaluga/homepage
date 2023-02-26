@@ -1,3 +1,4 @@
+import Image from "next/image";
 import style from "../../styles/components/WorkSection.module.css";
 import n_puzle_logo from "../../public/n-puzle.jpg";
 import ps_logo from "../../public/ps-logo.jpg";
@@ -5,6 +6,7 @@ import bouy_logo from "../../public/bouy-screen.jpg";
 import brutto_logo from "../../public/brutto-logo.jpg";
 import fary_tales_logo from "../../public/fary_tales.jpg";
 import the_machine_landing_image from "../../public/the-machine-landing.jpg";
+import the_machine_android_image from "../../public/the-machine-android.png";
 
 function Card(props) {
     return (
@@ -51,6 +53,16 @@ function Card(props) {
 }
 
 const project_data_model = [
+    {
+        name: "The Machine",
+        description:
+            "This is a mobile application for people involved in the purchase and further sale of cars.",
+
+        image: the_machine_android_image,
+        g_play_link:
+            "https://play.google.com/store/apps/details?id=com.bazyl.carsdealer",
+    },
+
     {
         name: "The Machine",
         description: 'Promo site for the mobile application "The Machine".',
