@@ -17,9 +17,10 @@ pipelines:
         script:
           - pipe: atlassian/scp-deploy:1.4.1
             variables:
-              USER: $USER
-              SERVER: $SERVER
-              REMOTE_PATH: '/var/home-page'
-              LOCAL_PATH: 'build/*'
-              EXTRA_ARGS: ["-P", "1983"]             
+              USER: 'root'
+              SERVER: 'tubaluga.ru'
+              REMOTE_PATH: '/var/home-page/'
+              LOCAL_PATH: 'build'
+              EXTRA_ARGS: ['-P', '1983']
+              DEBUG: 'true'
               SSH_KEY: '$MY_SSH_KEY'
