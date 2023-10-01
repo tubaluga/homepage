@@ -22,3 +22,4 @@ pipelines:
               REMOTE_PATH: '/var/home-page'
               LOCAL_PATH: 'build/*'
               EXTRA_ARGS: ['-P', '1983']             
+              SSH_KEY: '$MY_SSH_KEY'
