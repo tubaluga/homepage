@@ -15,7 +15,7 @@ pipelines:
         name: Deploy artifacts using SCP to PROD
         deployment: production
         script:
-          - pipe: atlassian/scp-deploy
+          - pipe: atlassian/scp-deploy:master
             variables:
               USER: $USER
               SERVER: $SERVER
