@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "../../public/developer-logo.png";
-import style from "../../styles/components/MainSection.module.css";
+import logo from "../public/developer-logo.png";
+import style from "../styles/components/MainSection.module.css";
 import Button from "./Button";
 
 export default function MainSection(props) {

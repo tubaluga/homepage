@@ -1,7 +1,7 @@
 import Image from "next/image";
-import style from "../../styles/components/Footer.module.css";
+import style from "../styles/components/Footer.module.css";
 import Button from "./Button";
-import github_logo from "../../public/GitHub-Mark-Light-32px.png";
+import github_logo from "../public/GitHub-Mark-Light-32px.png";
 import Link from "next/link";
 
 const social_media_model = [

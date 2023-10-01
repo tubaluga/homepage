@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAppStoreIos, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
-import Style from "../../styles/components/StoreBrands.module.css";
+import Style from "../styles/components/StoreBrands.module.css";
 import Link from "next/link";
 
 const StoreItem = ({ href, name, icon }) => {

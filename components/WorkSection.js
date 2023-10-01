@@ -1,13 +1,13 @@
 "use client";
 
-import style from "../../styles/components/WorkSection.module.css";
-import n_puzle_logo from "../../public/n-puzle-sm.png";
-import ps_logo from "../../public/ps-logo-sm.png";
-import brutto_logo from "../../public/brutto-logo-sm.png";
-import fary_tales_logo from "../../public/fary-tales-sm.png";
-import the_machine_landing_image from "../../public/the-machine-landing.jpg";
-import the_machine_android_image from "../../public/the-machine-android.png";
-import car_sold_web_image from "../../public/car-sold-web.png";
+import style from "../styles/components/WorkSection.module.css";
+import n_puzle_logo from "../public/n-puzle-sm.png";
+import ps_logo from "../public/ps-logo-sm.png";
+import brutto_logo from "../public/brutto-logo-sm.png";
+import fary_tales_logo from "../public/fary-tales-sm.png";
+import the_machine_landing_image from "../public/the-machine-landing.jpg";
+import the_machine_android_image from "../public/the-machine-android.png";
+import car_sold_web_image from "../public/car-sold-web.png";
 import Link from "next/link";
 import { AppleAppStore, GooglePlayStore } from "./StoreBrands";
 import Image from "next/image";

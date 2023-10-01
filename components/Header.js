@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Header.module.css";
+import styles from "../styles/components/Header.module.css";
 
 const header_menu_items = [
     {
@@ -20,11 +20,7 @@ export default function Header() {
         <div className={styles.header}>
             {header_menu_items.map((item, index) => {
                 return (
-                    <a
-                        key={`menu-${index}`}
-                        className={styles.header__item}
-                        href={item.link}
-                    >
+                    <a key={`menu-${index}`} className={styles.header__item} href={item.link}>
                         {item.name}
                     </a>
                 );
