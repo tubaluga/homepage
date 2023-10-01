@@ -14,7 +14,7 @@ export default function MainSection(props) {
                     <Button href="mailto:tubaluga@gmail.com">Email Me</Button>
                 </div>
             </div>
-            <Image src={logo} alt="logo" />
+            <Image src={logo} alt="logo" priority={true} />
         </div>
     );
 }

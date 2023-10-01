@@ -21,7 +21,7 @@ export default function Header() {
             {header_menu_items.map((item, index) => {
                 return (
                     <a
-                        key={`menu-$index`}
+                        key={`menu-${index}`}
                         className={styles.header__item}
                         href={item.link}
                     >
