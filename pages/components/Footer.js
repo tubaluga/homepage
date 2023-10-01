@@ -2,6 +2,7 @@ import Image from "next/image";
 import style from "../../styles/components/Footer.module.css";
 import Button from "./Button";
 import github_logo from "../../public/GitHub-Mark-Light-32px.png";
+import Link from "next/link";
 
 const social_media_model = [
     {
@@ -20,19 +21,9 @@ export default function Footer(props) {
             <div className={style.social_logo_row}>
                 {social_media_model.map((element, index) => {
                     return (
-                        <a
-                            key={`social-$index`}
-                            target="_blank"
-                            href={element.link}
-                            rel="noreferrer"
-                        >
-                            <Image
-                                src={element.image}
-                                layout="fixed"
-                                alt={element.name}
-                                className={style.social_logo_row__item}
-                            />
-                        </a>
+                        <Link key={`social-${index}`} target="_blank" href={element.link} rel="noreferrer">
+                            <Image src={element.image} alt={element.name} className={style.social_logo_row__item} />
+                        </Link>
                     );
                 })}
             </div>

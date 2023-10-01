@@ -3,9 +3,9 @@ import Header from "./components/Header";
 import styles from "../styles/Home.module.css";
 import Container from "./components/Container";
 import MainSection from "./components/MainSection";
+import Footer from "./components/Footer";
 import WorkSection from "./components/WorkSection";
 import AboutSection from "./components/AboutSection";
-import Footer from "./components/Footer";
 
 export default function Home() {
     return (

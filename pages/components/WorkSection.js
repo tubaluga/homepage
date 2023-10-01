@@ -1,11 +1,10 @@
 "use client";
 
 import style from "../../styles/components/WorkSection.module.css";
-import n_puzle_logo from "../../public/n-puzle.jpg";
-import ps_logo from "../../public/ps-logo.jpg";
-import bouy_logo from "../../public/bouy-screen.jpg";
-import brutto_logo from "../../public/brutto-logo.jpg";
-import fary_tales_logo from "../../public/fary_tales.jpg";
+import n_puzle_logo from "../../public/n-puzle-sm.png";
+import ps_logo from "../../public/ps-logo-sm.png";
+import brutto_logo from "../../public/brutto-logo-sm.png";
+import fary_tales_logo from "../../public/fary-tales-sm.png";
 import the_machine_landing_image from "../../public/the-machine-landing.jpg";
 import the_machine_android_image from "../../public/the-machine-android.png";
 import car_sold_web_image from "../../public/car-sold-web.png";
@@ -31,16 +30,14 @@ function Card(props) {
                     {!!props.project.link ? (
                         <div className={style.app_store__container}>
                             <Link href={props.project.link}>
-                                <a>
-                                    <p>View project →</p>
-                                </a>
+                                <p>View project →</p>
                             </Link>
                         </div>
                     ) : null}
                 </div>
 
                 <div className={style.card__image}>
-                    <Image objectFit={"cover"} src={props.project.image} alt="project logo" layout={"fill"} />
+                    <Image className={style.image} priority={true} src={props.project.image} alt="project logo" />
                 </div>
             </div>
         </div>
@@ -96,11 +93,11 @@ const project_data_model = [
         image: brutto_logo,
     },
 
-    {
-        name: "Bouy",
-        description: "Desktop application for processing measurements of seas and oceans.",
-        image: bouy_logo,
-    },
+    /*   {
+           name: "Bouy",
+           description: "Desktop application for processing measurements of seas and oceans.",
+           image: bouy_logo,
+       },*/
 ];
 
 export default function WorkSection() {
