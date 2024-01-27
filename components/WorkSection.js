@@ -8,6 +8,7 @@ import fary_tales_logo from "../public/fary-tales-sm.png";
 import the_machine_landing_image from "../public/the-machine-landing.jpg";
 import the_machine_android_image from "../public/the-machine-android.png";
 import car_sold_web_image from "../public/car-sold-web.png";
+import tm_tver_landing_page_image from "../public/tm-tver-landing.jpg";
 import Link from "next/link";
 import { AppleAppStore, GooglePlayStore } from "./StoreBrands";
 import Image from "next/image";
@@ -45,6 +46,13 @@ function Card(props) {
 }
 
 const project_data_model = [
+    {
+        name: "Transmission",
+        description: "Landing page for a transport company.",
+
+        image: tm_tver_landing_page_image,
+        link: "https://tm-tver.freeman-dev.ru",
+    },
     {
         name: "CarSold",
         description: "It's a web app for pawn car sales.",
